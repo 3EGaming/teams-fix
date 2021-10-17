@@ -1,0 +1,14 @@
+{
+    "name": "Teams fix",
+    "description": "Fix the annoying 'Are you still there?' message that apears when using multiple tabs in teams.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": { "16": "/icon/icon16.png",
+        "32": "/icon/icon32.png",
+        "48": "/icon/icon48.png",
+       "128": "/icon/icon128.png" },
+    "content_scripts": [{
+        "js": ["/main.js"],
+        "matches": ["https://teams.microsoft.com/*"]
+    }]
+}
